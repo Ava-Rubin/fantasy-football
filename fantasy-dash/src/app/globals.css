@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 'light-bg';
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 35,32,45;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb))
+}
+
+.card {
+  @apply text-center border-8 rounded-3xl overflow-hidden shadow-lg bg-light-card dark:bg-dark-card;
+}
+
+h1{
+  @apply text-2xl p-3 break-all font-alata;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
