@@ -1,3 +1,4 @@
+import Roster from "./components/Roster/roster";
 import Trending from "./components/Trending/trending";
 
 export default function Home() {
@@ -6,29 +7,30 @@ export default function Home() {
     <link rel="preconnect" href="https://fonts.googleapis.com"></link>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
 <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"></link>
-    <div class="h-screen p-12 grid grid-flow-col grid-rows-6 grid-cols-5 gap-6 ">
-      <div class="card row-span-6 border-light-pink dark:border-dark-pink">
+    <div className="h-screen p-12 grid grid-flow-col grid-rows-6 grid-cols-5 gap-8 ">
+      <div className="fluted-glass row-span-6">
         <h1>TEAM NAME</h1>
+        <Roster/>
       </div>
-      <div class="card col-start-2 row-span-2  border-light-green dark:border-dark-green">
+      <div className="card col-start-2 row-span-2 ">
         <h1>PROJECTED</h1>
       </div>
-      <div class="card row-span-2 border-light-blue border-8 dark:border-dark-blue">
+      <div className="card row-span-2 ">
         <h1>GRAPH</h1>
       </div>
-      <div class="card border-light-yellow border-8 dark:border-dark-yellow">
+      <div className="card ">
         <h2>7-2-0</h2>
       </div>
-      <div class="card border-light-yellow border-8 dark:border-dark-yellow">
+      <div className="card ">
         <h2>12th/14</h2>
       </div>
-      <div class="col-start-3 col-span-3 row-span-2 card border-light-yellow border-8 dark:border-dark-yellow">
+      <div className="col-start-3 col-span-3 row-span-2 card ">
         <h1>NEWS</h1>
       </div>
-      <div class="row-start-3 row-span-4 col-start-3 col-span-2 card border-light-purp border-8 dark:border-dark-purp">
+      <div className="row-start-3 row-span-4 col-start-3 col-span-2 card">
         <h1>TRADE</h1>
       </div>
-      <div class="row-start-3 row-span-4 col-start-5 card border-light-pink border-8 dark:border-dark-pink">
+      <div className="row-start-3 row-span-4 col-start-5 card">
         <h1>TRENDING</h1>
         <Trending/>
       </div>

@@ -7,7 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backdropFilter: ['blur'],
       colors: {
+        'background':"#000000",
+        'red-player':"#FF5656",
+        'yellow-player':"#FFB74B",
+        'green-indic':'#79E1B2',
+        'red-indic':'#FF5656',
+        'red-score':'#F8A2A2',
+        'yellow-score':'#FCD294',
+        'card-bg':'#F2F2F2',
+        
+
+
         'light-bg':'#F5F5F5',
         'light-card':'#FFFFFF',
         'light-pink':'#FBC1DB',
@@ -31,7 +43,8 @@ module.exports = {
     fontFamily: {
       'arimo':['Arimo','sans-serif'],
       'josefin-sans':['Josefin Sans','sans-serif'],
-      'alata':['Alata','serif']
+      'alata':['Alata','serif'],
+      'urbanist':['Urbanist','sans-serif']
     }
     },
   },
